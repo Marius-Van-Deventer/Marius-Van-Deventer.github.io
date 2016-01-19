@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' /> -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="app.css">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!--this will put the navbar in it's own container -->
+        <div class="navbar-header">
+          <!-- navbar-header is for the small navbar -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar">
+            <!--this creates the collapsible button -->
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <!-- the 3 "bars" in the button -->
+          </button>
+          <div class="navbar-brand">Marius Van Deventer</div>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="my-navbar">
+          <!-- this is the maion navbar. It is tied to the small navbar via the id -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+			<li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section id="home">
+    <div class="container">
+      <div class="row">
+        <div class="spacer"></div>
+        <div class="jumbotron">
+          <h1 class="jumbotext">Marius Van Deventer</h1>
+          <p></p>
+          <div class="page-header"></div>
+          <a href="https://twitter.com/mariusvdvnter" target="_blank">
+            <span>Twitter</span>
+          </a>
+          <a href="https://instagram.com/marius.vandeventer/" target="_blank">
+            <span>Instagram</span>
+          </a>
+          <a href="https://tz.linkedin.com/pub/marius-van-deventer/13/b80/8a5" target="_blank">
+            <span>LinkedIN</span>
+          </a>
+          <a href="https://github.com/Marius-Van-Deventer" target="_blank">
+            <span>Github</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="about">
+
+    <div class="container">
+    <div class="spacer"></div>	
+	<h1 class="subheading">About Me</h1>
+      <p class="sectiontext">Who I am</p>
+      <div class="row">
+
+        <div class="spacer"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4 col-sm-6 semi-opaque-box">
+          <p>My name is Marius Van Deventer.</p>
+          <p>
+            I am originally from South Africa, but i currently live and work in Tanzania, along with my wife and young son.
+          </p>
+          <p>
+            I am an IT person currently working in the role of Onsite Support at a sugar mill in Tanzania.
+            <br /> I currently run a network of about 300 users, using mostly Microsoft technologies.
+          </p>
+          <p>
+            I enjoy learning new technologies. This website was created as part of an effort to learn Bootstrap web layout. I have in the past created small programs to make my work easier.
+          </p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4 col-sm-6">
+
+          <img src="http://i.imgur.com/446z8GS.jpg" class="img-circle my-face" />
+
+        </div>
+        <div class="col-md-1"></div>
+
+
+      </div>
+    </div>
+
+  </section>
+  <section id="projects">
+    <div class="spacer"></div>
+    <div class="container">
+      <h1 class="subheading">Projects</h1>
+      <p class="sectiontext">Stuff I have done</p>
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box">
+            <p class="sectiontext centered">Hostmon-Frontend</p>
+            <img src="hm-fe.jpg" class="centered" width="100%" />
+            <p>A nice and neat Frontend to my Host and Network monitor, which I use everyday at work.</p>
+            <p>Made with: HTML, AngularJS, Bootstrap.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box centered-text">
+            <p class="sectiontext centered">Hostmon-Backend</p>
+            <img src="hm-be.jpg" class="centered" width="100%" />
+            <p>A not so nice and neat Backend for my Host and Network monitor, which I use everyday at work.</p>
+            <p>Made with: Python, Windows admin tools, Powershell.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box centered-text">
+            <p class="sectiontext centered">Weather puller</p>
+            <img src="weather.jpg" class="centered" width="100%" />
+            <p>A set of CMD scripts that gather weather graphics from GFS.com for internal office use.</p>
+            <p>Made with: CMD scripts, ImageMagick.</p>
+          </div>
+        </div>
+         <!--
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box centered-text">
+            <p class="sectiontext centered">Future project</p>
+            <img src="http://i.imgur.com/4WJHADM.jpg" class="centered" width="100%" />
+            <br />Future project
+          </div>
+        </div>
+       
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box">
+            <p class="sectiontext centered">Future project</p>
+            <img src="http://i.imgur.com/4WJHADM.jpg" class="centered" width="100%" />
+            <br />Future project
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box">
+            <p class="sectiontext centered">Future project</p>
+            <img src="http://i.imgur.com/4WJHADM.jpg" class="centered" width="100%" />
+            <br />Future project
+          </div>
+        </div> -->
+
+
+      </div>
+
+    </div>
+  </section>
+   <section id="interests">
+    <div class="spacer"></div>
+    <div class="container">
+      <h1 class="subheading">Interests</h1>
+      <p class="sectiontext">Things I like</p>
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box">
+            <p class="sectiontext centered">Stargazing</p>
+            <img src="hm-fe.jpg" class="centered" width="100%" />
+            <p>A nice and neat Frontend to my Host and Network monitor, which I use everyday at work.</p>
+            <p>Made with: HTML, AngularJS, Bootstrap.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box centered-text">
+            <p class="sectiontext centered">Hostmon-Backend</p>
+            <img src="hm-be.jpg" class="centered" width="100%" />
+            <p>A not so nice and neat Backend for my Host and Network monitor, which I use everyday at work.</p>
+            <p>Made with: Python, Windows admin tools, Powershell.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box centered-text">
+            <p class="sectiontext centered">Weather puller</p>
+            <img src="weather.jpg" class="centered" width="100%" />
+            <p>A set of CMD scripts that gather weather graphics from GFS.com for internal office use.</p>
+            <p>Made with: CMD scripts, ImageMagick.</p>
+          </div>
+        </div>
+         <!--
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box centered-text">
+            <p class="sectiontext centered">Future project</p>
+            <img src="http://i.imgur.com/4WJHADM.jpg" class="centered" width="100%" />
+            <br />Future project
+          </div>
+        </div>
+       
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box">
+            <p class="sectiontext centered">Future project</p>
+            <img src="http://i.imgur.com/4WJHADM.jpg" class="centered" width="100%" />
+            <br />Future project
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class=" semi-opaque-box">
+            <p class="sectiontext centered">Future project</p>
+            <img src="http://i.imgur.com/4WJHADM.jpg" class="centered" width="100%" />
+            <br />Future project
+          </div>
+        </div> -->
+
+
+      </div>
+
+    </div>
+  </section>
+  <section id="contact">
+
+    <div class="container">
+      <div class="row">
+        <div class="spacer"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4 semi-opaque-box">
+          <h1 class="subheading">Contact Me:</h1>
+          <p>Email: <a href="">marius.vandeventer@gmail.com</a></p>
+          <p>Tel: +255 78 441 3757</p>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-2 semi-opaque-box" style="margin-left: 5px;">
+          <!--<h2>See more of me at: </h2>-->
+          <a href="https://twitter.com/mariusvdvnter" target="_blank">
+            <div>Twitter</div>
+          </a>
+          <br /><br />
+          <a href="https://instagram.com/marius.vandeventer/" target="_blank">
+            <div>Instagram</div>
+          </a>
+          <br /><br />
+          <a href="https://tz.linkedin.com/pub/marius-van-deventer/13/b80/8a5" target="_blank">
+            <div>LinkedIN</div>
+          </a>
+          <br /><br />
+          <a href="https://github.com/Marius-Van-Deventer" target="_blank">
+            <div>Github</div>
+          </a>
+          <br /><br />
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+  </section>
+
+
+</body>
+
+</html>
