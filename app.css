@@ -64,7 +64,7 @@ a:hover {
 
 .my-face {
   width: 100%;
-  max-width: 400px;
+  max-width: 250px;
   margin-top: 20px;
 }
 
@@ -86,6 +86,13 @@ a:hover {
   background: url(./sanjay.jpg) no-repeat center center fixed;
   background-size: cover;
 }
+
+
+#interests {
+  background: url(./heart.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
 
 #contact {
   background: url(./club.jpg) no-repeat center center fixed;
